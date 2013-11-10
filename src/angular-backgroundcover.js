@@ -31,7 +31,7 @@
       restrict: 'AC',
       link: function (scope, element, attrs) {
         if (!native || attrs.force) {
-          element.backgroundcover(attrs.image || undefined, {destroy: '$destroy'});
+          element.backgroundcover(attrs.image || undefined, {destroy: '$destroy', poll: attrs.poll === 'true' ? true : false});
         }
       }
     };

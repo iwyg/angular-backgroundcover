@@ -45,5 +45,11 @@ Force usage of `backgroundcover()`:
 <div class="background-cover" image="my/image.jpg" force="true"></div>
 ```
 
+Force element resize polling (instead of `window.onresize`):
+
+```html
+<div class="background-cover" poll="true"></div>
+```
+
 [1]: http://angularjs.org/
 [2]: http://iwyg.github.io/jquery.backgroundcover/
